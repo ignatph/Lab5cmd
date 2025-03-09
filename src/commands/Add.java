@@ -13,7 +13,6 @@ public class Add extends Command {
 
     @Override
     public void execute(Printer printer) {
-        System.out.println("kiki");
         if (checkArgument(new Printer(), getArgs())) {
             Worker worker = new Worker();
             worker.setId(IDGenerator.generateUniqueId());
