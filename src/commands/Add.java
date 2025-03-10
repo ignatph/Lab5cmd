@@ -10,7 +10,6 @@ public class Add extends Command {
     public Add(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {
         super(description, hasArgs, userManager, workerCollection);
     }
-
     @Override
     public void execute(Printer printer) {
         if (checkArgument(new Printer(), getArgs())) {
