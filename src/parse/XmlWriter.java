@@ -1,6 +1,7 @@
 package parse;
 import body.*;
 import collection.CollectionWorker;
+import interfaces.BaseWriter;
 import utillity.Printer;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -13,7 +14,7 @@ import org.w3c.dom.*;
 
 import java.io.File;
 
-public class XmlWriter {
+public class XmlWriter implements BaseWriter {
     private final Printer printer;
     private final CollectionWorker collection;
 
@@ -21,7 +22,7 @@ public class XmlWriter {
         this.printer = printer;
         this.collection = collection;
     }
-
+@Override
     public void write(String path) {
         try {
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();

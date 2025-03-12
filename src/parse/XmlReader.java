@@ -3,6 +3,7 @@ package parse;
 import collection.CollectionWorker;
 
 import body.*;
+import interfaces.BaseReader;
 import utillity.Printer;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -11,7 +12,7 @@ import org.w3c.dom.*;
 import java.io.File;
 import java.time.LocalDate;
 
-public class XmlReader {
+public class XmlReader implements BaseReader {
     private final Printer printer;
     private final CollectionWorker collection;
 
@@ -19,6 +20,7 @@ public class XmlReader {
         this.printer = printer;
         this.collection = collection;
     }
+    @Override
     public Worker[] read(String path) {
         try {
             File xmlFile = new File(path);

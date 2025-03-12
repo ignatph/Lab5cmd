@@ -230,17 +230,14 @@ public class UserManager {
             if (userInput.equalsIgnoreCase("null")) break;
             if (userInput.length() < 6) {
                 System.out.println("Ошибка: Минимум 6 символов!");
-                continue;
-            }
-            zipCode = userInput;
+
+            }else{
+            zipCode = userInput;}
         } while (!ZipCodeValidator.validate(zipCode));
         address.setZipCode(zipCode);
-
         organization.setAddress(address);
         worker.setOrganization(organization);
 
-        // Опциональные поля
-        // Дата окончания
         LocalDate endDate = null;
         do {
             System.out.print("Введите дату окончания (ГГГГ-ММ-ДД или 'null'): ");

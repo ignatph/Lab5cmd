@@ -1,7 +1,9 @@
 package main;
 
-import body.Worker;
+
 import manager.UserManager;
+import parse.XmlReader;
+
 import utillity.Printer;
 import utillity.Reader;
 import collection.CollectionWorker;
@@ -15,6 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
         Reader reader = new Reader();
+        Printer printer = new Printer();
 
         System.out.println("–––––––– " + LocalDateTime.now().toString().substring(0, 10) + " ––––––––");
         System.out.println("Введите путь к файлу или нажмите Enter чтобы продолжить");
@@ -25,7 +28,9 @@ public class Main {
             FILE_PATH = userInp;
         }
         CollectionWorker worker = new CollectionWorker();
-        worker.getCollection().clear();
+        XmlReader reader1 = new XmlReader(printer ,new CollectionWorker());
+        reader1.read(FILE_PATH);
+        printer.print(worker.getCollection().toString());
         UserManager userManager = new UserManager(reader, worker);
         UserManager.setIsInWork(true);
         while (UserManager.isRunning()) {
