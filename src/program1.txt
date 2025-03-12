@@ -1,3 +1,2 @@
 
-exec src/program.txt
-exec src/program.txt
+exec src/program3.txt

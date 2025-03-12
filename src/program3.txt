@@ -1,0 +1,1 @@
+exec src/program1.txt
