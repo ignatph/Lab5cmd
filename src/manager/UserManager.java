@@ -71,10 +71,9 @@ public class UserManager {
             for (String command : list) {
                 command = command.replaceAll("\\s+", " ").trim().strip();
                 System.out.println("\nСейчас выполняется команда " + command);
-                RecursionLimiter.enter();
                 checkAndStartCommand(command);
             }
-        } catch (StackOverflowError | RecursionException ex) {
+        } catch (StackOverflowError ex) {
             System.err.println("\nСкрипт вызывает сам себя! Выход из скрипта");
         }
     }

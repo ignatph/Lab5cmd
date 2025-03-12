@@ -31,7 +31,9 @@ public class ExecuteScript extends Command {
                 try (BufferedReader reader = new BufferedReader(new StringReader(scriptContent))) {
                     String line;
                     while ((line = reader.readLine()) != null) {
-                        listOfCommands.add(line);
+                        if (!line.trim().isEmpty()) {
+                            listOfCommands.add(line);
+                        }
                     }
                 }
                 userManager.requestCommandForScript(listOfCommands);
@@ -56,8 +58,10 @@ public class ExecuteScript extends Command {
     }
 }
 class ProtectedReader{
+
     //static HashSet<String> hash = new HashSet<>();
     public static String readFile(String filePath,HashSet<String> recursion) throws FileNotFoundException {
+        Printer printer = new Printer();
         String line;
         StringBuilder script = new StringBuilder();
         HashSet<String> rec = new HashSet<>(recursion);
@@ -68,15 +72,19 @@ class ProtectedReader{
                     //System.out.print();
                     try {
                         String path = line.split(" ")[1];
-                        if (!(recursion.contains(path))){
+                        if (!(rec.contains(path))){
                             script.append(readFile(path,rec));
                         }
-                    }
-                    catch (RuntimeException e){
-                        System.out.println("Скрипт "+line.split(" ")[1] +" не доступен");
-                    }
+                    } catch (ArrayIndexOutOfBoundsException ec) {
+                            printer.print("Неправильный формат команды exec: " + line);
+                        } catch (RuntimeException e){
+                        printer.print("Скрипт "+line.split(" ")[1] +" не доступен");}
+
                 }else{
-                    script.append(line).append("\n");}
+                    if (!line.trim().isEmpty()) {
+                        script.append(line).append("\n");
+                    }
+                    }
             }
             reader.close();
             return script.toString();

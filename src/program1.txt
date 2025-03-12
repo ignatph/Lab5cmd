@@ -1,1 +1,3 @@
-clear
+
+exec src/program.txt
+exec src/program.txt
