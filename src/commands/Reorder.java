@@ -24,7 +24,7 @@ public class Reorder extends Command {
         while (!originalStack.isEmpty()) {
             tempList.add(originalStack.pop());
         }
-        Collections.reverse(tempList);
+
         originalStack.clear();
 
         for (Worker element : tempList) {

@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+
+
     <build>
         <plugins>
             <plugin>
@@ -23,6 +25,7 @@
                         </manifest>
                     </archive>
                 </configuration>
+
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -68,7 +71,9 @@
             <artifactId>xstream</artifactId>
             <version>1.4.21</version>
         </dependency>
+
     </dependencies>
+
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

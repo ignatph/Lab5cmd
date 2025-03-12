@@ -19,9 +19,9 @@ public class Save extends Command {
     @Override
     public void execute(Printer printer) {
         if (checkArgument(new Printer(), getArgs())) {
-            XmlWriter csvWriter = new XmlWriter();
+            XmlWriter xmlWriter = new XmlWriter( printer,collection);
             String filePath =  "src/save.xml";
-            csvWriter.writeToXml(collection.getCollection(), filePath);
+            xmlWriter.write(filePath);
 
         }
     }

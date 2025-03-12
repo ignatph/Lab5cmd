@@ -25,8 +25,8 @@ public class ExecuteScript extends Command {
                     printer.print("Скрипт пустой!");
                 } else {
                     BufferedReader bf = new BufferedReader(new FileReader(path));
-                    String line = bf.readLine();
-                    List<String> listOfCommands = new ArrayList<>();
+                     String line = bf.readLine();
+                   List<String> listOfCommands = new ArrayList<>();
                     while (line != null) {
                         listOfCommands.add(line);
                         line = bf.readLine();
