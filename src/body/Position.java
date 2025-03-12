@@ -1,6 +1,8 @@
 package body;
 
-
+/**
+ * Model of Position, contains getters/setter for fields of enum
+ */
 public enum Position {
     MANAGER,
     HEAD_OF_DIVISION,

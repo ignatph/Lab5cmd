@@ -1,7 +1,9 @@
 package body;
 
 import java.time.LocalDate;
-
+/**
+ * Model of Worker, contains getters/setter for fields of closs and methods to change fields
+ */
 public class Worker {
 
     private Long id;

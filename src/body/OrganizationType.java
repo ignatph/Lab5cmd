@@ -1,5 +1,7 @@
 package body;
-
+/**
+ * Model of OrganizationType, contains getters/setter for fields of enum
+ */
 public enum OrganizationType {
     COMMERCIAL,
     PUBLIC,
