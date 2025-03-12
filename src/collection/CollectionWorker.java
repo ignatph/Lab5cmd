@@ -8,7 +8,9 @@ import java.time.temporal.ChronoUnit;
 
 import java.util.Stack;
 
-
+/**
+ * Contains tools for operation Worker collection
+ */
 public class CollectionWorker {
     private static LocalDateTime creationDate;
 

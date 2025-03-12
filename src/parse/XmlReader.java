@@ -11,7 +11,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.*;
 import java.io.File;
 import java.time.LocalDate;
-
+/**
+ * Class for Reading Collections from XML files
+ */
 public class XmlReader implements BaseReader {
     private final Printer printer;
     private final CollectionWorker collection;

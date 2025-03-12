@@ -6,6 +6,9 @@ import interfaces.Executable;
 import manager.UserManager;
 import utillity.Printer;
 
+/**
+ * Common abstract class for all commands
+ */
 public abstract class Command implements Executable, Checkable {
     protected final UserManager userManager;
     protected final CollectionWorker collection;

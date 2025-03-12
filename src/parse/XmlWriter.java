@@ -14,6 +14,10 @@ import org.w3c.dom.*;
 
 import java.io.File;
 
+/**
+ * Class for Writing Collections to XML files
+ */
+
 public class XmlWriter implements BaseWriter {
     private final Printer printer;
     private final CollectionWorker collection;
