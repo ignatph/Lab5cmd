@@ -9,6 +9,10 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Class contains implementation of clear command
+ * Clears all collection
+ */
 public class Clear extends Command {
     public Clear(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {
         super(description, hasArgs, userManager, workerCollection);

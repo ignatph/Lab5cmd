@@ -3,7 +3,10 @@ package commands;
 import collection.CollectionWorker;
 import manager.UserManager;
 import utillity.Printer;
-
+/**
+ * Class contains implementation of remove command
+ * Delete last element in collection
+ */
 public class RemoveLast extends Command {
     public RemoveLast(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {
         super(description, hasArgs, userManager, workerCollection);

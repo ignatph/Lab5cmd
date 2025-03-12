@@ -6,10 +6,12 @@ import collection.CollectionWorker;
 import manager.UserManager;
 import utillity.Printer;
 
+
 /**
  * Class contains implementation of remove_at command
  * Deletes element from collection by id
  */
+
 public class RemoveId extends Command {
     public RemoveId(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {
         super(description, hasArgs, userManager, workerCollection);

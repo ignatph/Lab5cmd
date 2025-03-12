@@ -14,7 +14,6 @@ import java.util.Map;
  * Output all the commands
  */
 
-
 public class Help extends Command {
     public Help(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {
         super(description, hasArgs, userManager, workerCollection);

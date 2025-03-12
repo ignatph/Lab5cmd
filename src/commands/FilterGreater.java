@@ -8,7 +8,10 @@ import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.List;
 import java.util.stream.Collectors;
-
+/**
+ * Class contains implementation of filter_Greater command
+ * Output elements whose EndDate field value is greater than the specified value
+ */
 public class FilterGreater extends Command {
     public FilterGreater(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {
         super(description, hasArgs, userManager, workerCollection);

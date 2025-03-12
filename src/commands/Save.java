@@ -6,10 +6,12 @@ import manager.UserManager;
 import parse.XmlWriter;
 import utillity.Printer;
 
+
 /**
- * Class contains implementation of print_ascending command
- * Save command in csv file on desktop
+ * Class contains implementation of save command
+ * Save commands in xml file on desktop
  */
+
 public class Save extends Command {
 
     public Save(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {

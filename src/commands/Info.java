@@ -4,6 +4,7 @@ import collection.CollectionWorker;
 import manager.UserManager;
 import utillity.Printer;
 
+
 /**
  * Class contains implementation of info command
  * Outputs basic information about elements in collection

@@ -8,6 +8,10 @@ import utillity.Printer;
 
 import java.util.Comparator;
 import java.util.Collections;
+/**
+ * Class contains implementation of Max_by_position command
+ * Output any object from the collection with the maximum value of the position field.
+ */
 
 public class MinByStatus extends Command {
     public MinByStatus(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {

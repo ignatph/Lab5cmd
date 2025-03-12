@@ -4,6 +4,10 @@ import body.Worker;
 import collection.CollectionWorker;
 import manager.UserManager;
 import utillity.Printer;
+/**
+ * Class contains implementation of update command
+ * Update element by id
+ */
 
 public class UpdateId extends Command {
 

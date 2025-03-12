@@ -5,7 +5,10 @@ import collection.CollectionWorker;
 import manager.UserManager;
 import utillity.IDGenerator;
 import utillity.Printer;
-
+/**
+ * Class contains implementation of add command
+ * Adds new element to collection
+ */
 public class Add extends Command {
     public Add(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {
         super(description, hasArgs, userManager, workerCollection);

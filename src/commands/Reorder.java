@@ -11,7 +11,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
-
+/**
+ * Class contains implementation of reorder command
+ * Sort collection in reverse order
+ */
 public class Reorder extends Command {
     public Reorder(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {
         super(description, hasArgs, userManager, workerCollection);

@@ -10,7 +10,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Class contains implementation of execute_script command
+ * Read and execute script from file
+ */
 public class ExecuteScript extends Command {
     public ExecuteScript(String description, boolean hasArgs, UserManager userManager, CollectionWorker workerCollection) {
         super(description, hasArgs, userManager, workerCollection);

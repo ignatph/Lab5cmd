@@ -4,6 +4,7 @@ import collection.CollectionWorker;
 import manager.UserManager;
 import utillity.Printer;
 
+
 /**
  * Class contains implementation of exit command
  * Terminate program

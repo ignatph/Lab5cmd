@@ -11,7 +11,10 @@ import java.util.Comparator;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * Class contains implementation of add_if_min command
+ * Adds new element to collection if provided field value is the lowest
+ */
 public class AddIfMin extends Command {
     private final UserManager userManager;
     private final CollectionWorker collectionWorker;
