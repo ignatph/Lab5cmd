@@ -35,7 +35,7 @@ public class CommandsManager {
 
         descriptionMap.put("reorder", new Reorder("-Отсортировать коллекцию в порядке, обратном нынешнему", false, userManager, collection));
         descriptionMap.put("min_by_status", new MinByStatus("-Вывести любой объект из коллекции, значение поля status которого является минимальным", false, userManager, collection));
-        descriptionMap.put("max_by_position", new MinByPosition("-Вывести любой объект из коллекции, значение поля position которого является максимальным", true, userManager, collection));
+        descriptionMap.put("max_by_position", new MaxByPosition("-Вывести любой объект из коллекции, значение поля position которого является максимальным", true, userManager, collection));
         descriptionMap.put("filter_greater_than_end_date", new FilterGreater("-Вывести элементы, значение поля endDate которых больше заданного", true, userManager, collection));
 
         descriptionMap.put("execute_script", new ExecuteScript("-Считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.", true, userManager, collection));
