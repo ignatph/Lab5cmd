@@ -1,8 +1,7 @@
 package body;
 
 /**
- * Represents an organization with name, type, and official address information.
- * All fields can be null unless specified otherwise.
+ * Model of Organization, contains getters/setter for fields of clas
  */
 public class Organization {
     private String fullName;

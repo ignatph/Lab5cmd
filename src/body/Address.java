@@ -1,5 +1,7 @@
 package body;
-
+/**
+ * Model of Address, contains getters/setter for fields of clas
+ */
 public class Address {
     private String street;
     private String zipCode;
