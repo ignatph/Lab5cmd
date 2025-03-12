@@ -38,7 +38,7 @@ public class CommandsManager {
         descriptionMap.put("max_by_position", new MaxByPosition("-Вывести любой объект из коллекции, значение поля position которого является максимальным", true, userManager, collection));
         descriptionMap.put("filter_greater_than_end_date", new FilterGreater("-Вывести элементы, значение поля endDate которых больше заданного", true, userManager, collection));
 
-        descriptionMap.put("execute_script", new ExecuteScript("-Считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.", true, userManager, collection));
+        descriptionMap.put("exec", new ExecuteScript("-Считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.", true, userManager, collection));
     }
 
     public HashMap<String, Command> getOpis() {

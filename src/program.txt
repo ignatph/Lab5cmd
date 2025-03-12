@@ -1,0 +1,3 @@
+execute_script src/program1.txt
+execute_script src/program.txt
+execute_script src/program1.txt

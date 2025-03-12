@@ -49,7 +49,7 @@ public class UserManager {
      */
     public void requestInputCommand() {
         try {
-            System.out.print("\nВведите команду: ");
+            System.out.print("\nВведите команду (help для справки): ");
             String line = reader.nextLine().strip().replaceAll("\\s+", " ");
             System.out.println(line);
             // (\\s+) один или несколько символов пробела, табуляции, новой строки и тд
@@ -71,7 +71,7 @@ public class UserManager {
             for (String command : list) {
                 command = command.replaceAll("\\s+", " ").trim().strip();
                 System.out.println("\nСейчас выполняется команда " + command);
-                RecursionLimiter.emerge();
+                RecursionLimiter.enter();
                 checkAndStartCommand(command);
             }
         } catch (StackOverflowError | RecursionException ex) {
